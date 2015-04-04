@@ -4,10 +4,229 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
-  <paths name="paths"/>
+  <sounds name="sound">
+    <sound>sound\sound8</sound>
+    <sound>sound\saga_melody</sound>
+  </sounds>
+  <sprites name="sprites">
+    <sprites name="Hero">
+      <sprites name="Hero Run">
+        <sprite>sprites\spr_hero_right</sprite>
+        <sprite>sprites\spr_hero_down</sprite>
+        <sprite>sprites\spr_hero_left</sprite>
+        <sprite>sprites\spr_hero_up</sprite>
+      </sprites>
+      <sprites name="Hero Attack">
+        <sprite>sprites\spr_hero_attack_left</sprite>
+        <sprite>sprites\spr_hero_attack_up</sprite>
+        <sprite>sprites\spr_hero_attack_right</sprite>
+        <sprite>sprites\spr_hero_attack_down</sprite>
+      </sprites>
+      <sprites name="Hero Idle">
+        <sprite>sprites\hero_idle_down</sprite>
+        <sprite>sprites\hero_idle_right</sprite>
+        <sprite>sprites\hero_idle_up</sprite>
+        <sprite>sprites\hero_idle_left</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Skeleton guard">
+      <sprite>sprites\spr_skeletonguard_down</sprite>
+      <sprite>sprites\spr_skeletonguard_up</sprite>
+      <sprite>sprites\spr_skeletonguard_left</sprite>
+      <sprite>sprites\spr_skeletonguard_right</sprite>
+    </sprites>
+    <sprites name="system">
+      <sprites name="window">
+        <sprite>sprites\spr_window_tl</sprite>
+        <sprite>sprites\spr_window_t</sprite>
+        <sprite>sprites\spr_window_tr</sprite>
+        <sprite>sprites\spr_window_mr</sprite>
+        <sprite>sprites\spr_window_ml</sprite>
+        <sprite>sprites\spr_window_b</sprite>
+        <sprite>sprites\spr_window_bl</sprite>
+        <sprite>sprites\spr_window_br</sprite>
+        <sprite>sprites\spr_window_base</sprite>
+      </sprites>
+      <sprites name="Warp">
+        <sprite>sprites\spr_warp</sprite>
+      </sprites>
+      <sprite>sprites\collison</sprite>
+      <sprite>sprites\monster_collison</sprite>
+      <sprite>sprites\spr_exp</sprite>
+      <sprites name="Title screen stuff">
+        <sprite>sprites\spr_help_words</sprite>
+        <sprite>sprites\spr_lore_words</sprite>
+        <sprite>sprites\spr_back_button</sprite>
+        <sprite>sprites\spr_exit</sprite>
+        <sprite>sprites\spr_play_game_button</sprite>
+        <sprite>sprites\spr_next_button</sprite>
+        <sprite>sprites\spr_title</sprite>
+        <sprite>sprites\spr_help_interaction</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="NPC">
+      <sprites name="NPC_lydia">
+        <sprite>sprites\spr_lydia_up</sprite>
+        <sprite>sprites\spr_lydia_right</sprite>
+        <sprite>sprites\spr_lydia_down</sprite>
+        <sprite>sprites\spr_lydia_left</sprite>
+      </sprites>
+      <sprites name="NPC_Dragon Gaurd">
+        <sprite>sprites\npc_dragon_gaurd__swing</sprite>
+        <sprite>sprites\spr_dragon_gaurd_up</sprite>
+        <sprite>sprites\spr_dragon_gaurd_offence</sprite>
+      </sprites>
+      <sprites name="NPC_inn_guy">
+        <sprite>sprites\spr_inn_guy</sprite>
+      </sprites>
+      <sprites name="NPC_Dragon soldier">
+        <sprite>sprites\spr_dragon_guard_dead</sprite>
+        <sprite>sprites\spr_dragon_guard_down</sprite>
+        <sprite>sprites\spr_dragon_doktor</sprite>
+        <sprite>sprites\spr_dragon_guard_up</sprite>
+        <sprite>sprites\spr_dragon_guard_left</sprite>
+        <sprite>sprites\spr_dragon_guard_right</sprite>
+        <sprite>sprites\spr_dragon_captain</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Objects">
+      <sprites name="Misc">
+        <sprite>sprites\spr_gold</sprite>
+        <sprite>sprites\spr_well</sprite>
+        <sprite>sprites\spr_charm</sprite>
+        <sprite>sprites\spr_dummy</sprite>
+      </sprites>
+      <sprites name="Nature">
+        <sprite>sprites\spr_flower</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Monsters">
+      <sprite>sprites\spr_monster_2</sprite>
+      <sprite>sprites\spr_tree_monster</sprite>
+      <sprite>sprites\spr_black_magic_guy</sprite>
+    </sprites>
+    <sprite>sprites\spr_help</sprite>
+    <sprite>sprites\spr_stonewall</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\background0</background>
+    <background>background\background8_Map001</background>
+    <background>background\background2_Map001</background>
+    <background>background\background3</background>
+    <background>background\background4</background>
+    <background>background\background5</background>
+    <background>background\title</background>
+    <background>background\lore</background>
+    <background>background\help</background>
+  </backgrounds>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
+  <scripts name="scripts">
+    <script>scripts\depth_correction.gml</script>
+    <script>scripts\script_ai.gml</script>
+  </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\shader0.shader</shader>
+  </shaders>
+  <objects name="objects">
+    <objects name="Party">
+      <object>objects\obj_hero</object>
+    </objects>
+    <objects name="NPC">
+      <objects name="Monster">
+        <object>objects\obj_monster_base</object>
+        <object>objects\obj_forest_monster</object>
+        <object>objects\obj_black_magic_guy</object>
+        <object>objects\obj_monster_slime</object>
+      </objects>
+      <object>objects\npc_dragon_gaurd</object>
+      <object>objects\obj_NPC_skeletonguard</object>
+      <object>objects\obj_NPC_base</object>
+      <object>objects\obj_lydia</object>
+      <object>objects\obj_lydia_bar</object>
+      <object>objects\obj_inn_guy</object>
+      <objects name="Dragon guards">
+        <object>objects\obj_dragon_guard_post</object>
+        <object>objects\obj_dragon_doktor</object>
+        <object>objects\obj_dragon_guard_post_1</object>
+        <object>objects\obj_dragon_guard_up</object>
+        <object>objects\obj_gaurd_practicing</object>
+        <object>objects\obj_dragon_guard_left</object>
+        <object>objects\obj_dragon_guard_dead</object>
+        <object>objects\obj_dragon_gaurd_hurt</object>
+        <object>objects\obj_dragon_captain</object>
+      </objects>
+    </objects>
+    <objects name="System">
+      <object>objects\obj_pause_event</object>
+      <object>objects\obj_monster_collison</object>
+      <object>objects\obj_monster_collision</object>
+      <object>objects\obj_collision</object>
+      <object>objects\obj_exp_1</object>
+      <object>objects\obj_exp_3</object>
+      <object>objects\obj_exe_cheat</object>
+      <object>objects\Game_stats</object>
+      <object>objects\GameState</object>
+      <objects name="window">
+        <object>objects\obj_window_base</object>
+      </objects>
+      <objects name="Warp">
+        <objects name="locations">
+          <object>objects\warp_inn</object>
+          <object>objects\obj_warp_tent</object>
+          <object>objects\Warp_back_inn</object>
+          <object>objects\warp_guard</object>
+          <object>objects\obj_warp_ruins</object>
+          <object>objects\obj_war_campsite</object>
+          <object>objects\warp_guard_back</object>
+          <object>objects\object50</object>
+        </objects>
+      </objects>
+      <objects name="Title screen polava">
+        <object>objects\obj_back_to_menu</object>
+        <object>objects\obj_buttion_help</object>
+        <object>objects\obj_play_game_button</object>
+        <object>objects\obj_exit_buttion</object>
+        <object>objects\obj_title</object>
+        <object>objects\obj_lore_text</object>
+        <object>objects\obj_help_words</object>
+        <object>objects\obj_next_button</object>
+        <object>objects\obj_help_interactions</object>
+        <object>objects\obj_help_walking</object>
+        <object>objects\obj_help_attacking</object>
+      </objects>
+    </objects>
+    <objects name="Quests">
+      <objects name="NPC Quests">
+        <objects name="NPC Lydia">
+          <object>objects\obj_Ransom_Money</object>
+        </objects>
+        <objects name="NPC DRAGON GUARD">
+          <object>objects\obj_charm</object>
+        </objects>
+      </objects>
+    </objects>
+    <objects name="Structures">
+      <object>objects\obj_well</object>
+      <object>objects\practice_dummy</object>
+      <object>objects\object7</object>
+    </objects>
+    <objects name="music">
+      <object>objects\obj_bg_music_</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_titlescreen</room>
+    <room>rooms\room_exit</room>
+    <room>rooms\room3</room>
+    <room>rooms\inn</room>
+    <room>rooms\rm_inside_tent</room>
+    <room>rooms\rm_ruins</room>
+    <room>rooms\room5</room>
+    <room>rooms\rm_lore</room>
+    <room>rooms\rm_help</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
