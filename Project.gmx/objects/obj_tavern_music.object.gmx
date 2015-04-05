@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>0</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,10 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>/*
 {
+if room = inn then {
 audio_stop_all()
-audio_play_sound(saga_melody, 1, true)
+audio_play_sound(sound8, 1, true)}
 }
 
 </string>

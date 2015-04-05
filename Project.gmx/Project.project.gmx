@@ -22,12 +22,6 @@
         <sprite>sprites\spr_hero_attack_right</sprite>
         <sprite>sprites\spr_hero_attack_down</sprite>
       </sprites>
-      <sprites name="Hero Idle">
-        <sprite>sprites\hero_idle_down</sprite>
-        <sprite>sprites\hero_idle_right</sprite>
-        <sprite>sprites\hero_idle_up</sprite>
-        <sprite>sprites\hero_idle_left</sprite>
-      </sprites>
     </sprites>
     <sprites name="Skeleton guard">
       <sprite>sprites\spr_skeletonguard_down</sprite>
@@ -214,6 +208,7 @@
     </objects>
     <objects name="music">
       <object>objects\obj_bg_music_</object>
+      <object>objects\obj_tavern_music</object>
     </objects>
   </objects>
   <rooms name="rooms">
